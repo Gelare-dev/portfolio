@@ -2,12 +2,180 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Golara's Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Designera</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            padding-top: 20px;
+        }
+
+        .template-card img {
+            max-height: 200px;
+            object-fit: cover;
+        }
+    </style>
 </head>
 <body>
-    <h1>Hello, I'm Golara 👋</h1>
-    <p>Frontend Developer - HTML, CSS, JavaScript, Bootstrap</p>
-    <a href="contact.html">Contact Me</a>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow">
+        <div class="container">
+            <a class="navbar-brand" href="#">Designera</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="components.html">Templates</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-5 text-center bg-light">
+        <div class="container">
+            <h9 class="display-6">Download Professional Website Templates</h9>
+            <p class="lead">Modern, responsive and easy-to-customize templates for your next project.</p>
+        </div>
+    </section>
+
+    <!-- Templates Section -->
+    <section id="templates" >
+        <div class="container pb-5">
+            <h2 class="mb-4">Available Templates</h2>
+            <div class="row g-4">
+                <!-- Template Card -->
+                <div class=" col-lg-4 col-md-4">
+                    <div class="card template-card h-100 bg-light">
+
+                        <img src="images/DocumentPic.jpg" height="350" class="card-img-top  w-100 h-100" alt="Template Screenshot">
+                        <div class="card-body">
+                            <h5 class="card-title my-3">Modern Personeli Template</h5>
+                            <p class="card-text">A clean and elegantfor personeli layout using HTML, CSS, and Bootstrap 5.</p>
+                            <a href="Default.aspx" class="btn btn-primary w-100">Live Preview</a>
+                            <!--<a href="#" class="btn btn-primary btn-sm">Live Preview</a>-->
+                            <!--<a href="#" class="btn btn-outline-secondary btn-sm">Download</a>-->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Repeat for more templates -->
+                <div class=" col-lg-4 col-md-4 ">
+                    <div class="card template-card h-100 bg-light">
+                        <img src="images/Templay_Store.png" class="card-img-top w-100 h-100" style="object-fit: cover;" alt="Template Screenshot">
+                                              <div class="card-body">
+                            <h5 class="card-title my-4">Templay_Store  Template</h5>
+                            <p class="card-text"> Perfect for stores to sell online. </p>
+                            <a href="Templay_Store.aspx" class="btn btn-primary w-100">Live Preview</a>
+                            <!--<a href="demo/Templay_Store.html" data-bs-toggle="modal" data-bs-target="#modalDefault" class="btn btn-primary btn-sm" target="_blank">Live Preview</a>-->
+                            <!--<a href="#" class="btn btn-primary btn-sm">Live Preview</a>-->
+                            <!--<a href="#" class="btn btn-outline-secondary btn-sm">Download</a>-->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- One more -->
+                <div class=" col-lg-4 col-md-4">
+                    <div class="card template-card h-100 bg-light ">
+
+                        <img src="images/Learn.png" class="card-img-top  w-100 h-100" height="380" style="object-fit: cover;" alt="Template Screenshot">
+
+                        <div class="card-body mt-3">
+                          
+                            <h5 class="card-title">Learning Page</h5>
+                            <p class="card-text ">A Learning Page template ideal for startups and small businesses.</p>
+
+                            <a href="Blog.aspx" class="btn btn-primary w-100">Live Preview</a>
+
+
+                            <!--<a href="#" class="btn btn-outline-secondary btn-sm">Download</a>-->
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center py-4 bg-light">
+        <div class="container">
+            <p class="mb-0">&copy; 2025 Designera. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div class="modal fade " tabindex="-1" id="modalDefaultPersoneli" data-bs-backdrop="static">
+        <div class="modal-dialog modal-fullscreen" role="document">
+            <div class="modal-content">
+                <div class="card-inner">
+                    <a href="#" class="close" data-bs-dismiss="modal" aria-label="بستن">
+                        <em class="icon ni ni-cross"></em>
+                    </a>
+
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="demoModalLabel">Live Preview – Personeli</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body ">
+                        <div class="modal-body p-0">
+                            <iframe src="Default.aspx" width="100%" height="100%" style="border: none; min-height: 100vh;"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade " tabindex="-1" id="modalDefault" data-bs-backdrop="static">
+        <div class="modal-dialog modal-fullscreen" role="document">
+            <div class="modal-content">
+                <div class="card-inner">
+                    <a href="#" class="close" data-bs-dismiss="modal" aria-label="بستن">
+                        <em class="icon ni ni-cross"></em>
+                    </a>
+
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="demoModalLabel">Live Preview – Templay_Store</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body ">
+                        <div class="modal-body p-0" style="height: 100vh; overflow: hidden;">
+                            <iframe src="Templay_Store.aspx" style="width: 100%; height: 100%; border: none; overflow: hidden;"></iframe>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade " tabindex="-1" id="modalDefaultLearn" data-bs-backdrop="static">
+        <div class="modal-dialog modal-fullscreen" role="document">
+            <div class="modal-content">
+                <div class="card-inner">
+                    <a href="#" class="close" data-bs-dismiss="modal" aria-label="بستن">
+                        <em class="icon ni ni-cross"></em>
+                    </a>
+
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="demoModalLabel">Live Preview –Learn</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body ">
+                        <div class="modal-body p-0">
+                            <iframe src="Blog.aspx" width="100%" height="100%" style="border: none; min-height: 100vh;"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <asp:Button runat="server" data-bs-dismiss="modal" class="d-none" data-bs-toggle="modal" data-bs-target="#modalDefaultPersoneli" ID="modal" Text="پیش فرض" />
+    <asp:Button runat="server" data-bs-dismiss="modal" class="d-none" data-bs-toggle="modal" data-bs-target="#modalDefault" ID="modal" Text="پیش فرض" />
+    <asp:Button runat="server" data-bs-dismiss="modal" class="d-none" data-bs-toggle="modal" data-bs-target="#modalDefaultLearn" ID="modal" Text="پیش فرض" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
