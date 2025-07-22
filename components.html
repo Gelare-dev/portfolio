@@ -9,7 +9,7 @@
     <meta name="author" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
-    <title>پرسنلی</title>
+    <title>components</title>
 
 
     <link rel="shortcut icon" href="./images/favicon.png" />
@@ -60,7 +60,21 @@
 
                                                 <li class="col-lg-4  col-sm-12 ">
                                                     <div style="height: 500px" class="preview-icon-box scroll card card-bordered ">
+                                                        <div class="card col-lg-12">
+                                                            <video controls="controls">
+                                                                <source src="Video/Add%20photos.mp4" class="card-img-top" />
+                                                            </video>
 
+
+                                                            <div class="card-body">
+                                                                <h5 class="card-title">Texpanse</h5>
+                                                                <p class="card-text">A smart auto-growing textarea built with pure HTML, CSS & JS.</p>
+                                                                <a href="demo/Add_image.html" data-bs-toggle="modal" data-bs-target="#modalDefaultAdd_image" class="btn btn-primary btn-sm" target="_blank">Live Demo</a>
+                                                                <!--<a href="downloads/texpanse.zip" class="btn btn-outline-secondary btn-sm" download>Download</a>-->
+                                                                <a href="downloads/Add_image.zip" class="btn btn-outline-secondary btn-sm">Download</a>
+                                                            </div>
+
+                                                        </div>
 
                                                     </div>
                                                 </li>
@@ -90,16 +104,31 @@
 
 
 
-                <div class="modal fade" id="demoModal" tabindex="-1" aria-labelledby="demoModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-xl modal-dialog-centered">
+                <div class="modal fade " tabindex="-1" id="modalDefaultAdd_image" data-bs-backdrop="static">
+                    <div class="modal-dialog  modal-xl" role="document">
                         <div class="modal-content">
+                            <div class="card-inner">
+                                <a href="#" class="close" data-bs-dismiss="modal" aria-label="بستن">
+                                    <em class="icon ni ni-cross"></em>
+                                </a>
 
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="demoModalLabel">Live Demo – Add_image</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body ">
+                                    <div class="modal-body p-0">
+                                        
+                                        <iframe src="Add_image.aspx" width="100%" height="100%" style="border: none; min-height: 100vh;"></iframe>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="modal fade " tabindex="-1" id="modalDefault" data-bs-backdrop="static">
-                    <div  class="modal-dialog  modal-xl" role="document">
+                    <div class="modal-dialog  modal-xl" role="document">
                         <div class="modal-content">
                             <div class="card-inner">
                                 <a href="#" class="close" data-bs-dismiss="modal" aria-label="بستن">
@@ -113,6 +142,7 @@
                                 <div class="modal-body ">
                                     <div class="modal-body p-0">
                                         <iframe src="Texpanse.aspx" width="100%" height="100%" style="border: none; min-height: 100vh;"></iframe>
+                                       
                                     </div>
                                 </div>
                             </div>
