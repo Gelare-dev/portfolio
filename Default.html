@@ -47,6 +47,7 @@
             background: #cdced32e;
             box-shadow: 0 0 10px -4px rgba(54, 74, 99, 0.2);
         }
+        
     </style>
     <link rel="stylesheet" href="https://egov.officeirib.ir/AssetsForAPP/assets/css/dashlite.rtl.css" />
     <link rel="stylesheet" href="https://egov.officeirib.ir/AssetsForAPP/assets/css/theme.css" />
@@ -60,6 +61,10 @@
         .brd {
             border-color: coral;
         }
+        html, body {
+            height: 100%;
+            margin: 0;
+            overflow: hidden; /* حذف اسکرول صفحه */
     </style>
 </head>
 <body class="has-rtl nk-body npc-default has-apps-sidebar has-sidebar" dir="rtl">
@@ -77,87 +82,102 @@
 
                                         <div class="col-md-12 col-lg-12 ">
                                             <h10 class="center">پرونده های پرسنلی</h10>
-                                          
 
-                                                <asp:TextBox ID="Txt_PersonelId" type="number" name="Txt_PersonelId" runat="server" class="form-control " placeholder="جستجو"></asp:TextBox>
-                                            
+
+                                            <asp:TextBox ID="Txt_PersonelId" type="number" name="Txt_PersonelId" runat="server" class="form-control " placeholder="جستجو"></asp:TextBox>
+
                                         </div>
 
                                         <div class="col-sm-12 col-md-12 col-lg-12    ">
+                                        <div class="row g-1 align-items-stretch my-1">
 
-                                         
-                                                <ItemTemplate>
-                                                    <div class="row my-1 ">
-                                                        <div id="Border1" onclick="ChengColorBorder_Click(Num1)" class=" card card-bordered  right col-sm-4 col-md-4 col-lg-4 " style="margin-top:0px;margin-right:12px;">
+                                            <!--<div class="row my-1 ">-->
+                                                <div id="Border1" onclick="ChengColorBorder_Click(Num1)" class=" card card-bordered col-sm-3  col-md-3 col-lg-4 p-2 " >
 
+<<<<<<< HEAD
                                                             <asp:Image src="https://gelare-dev.github.io/portfolio/images/person.jpg" ID="Image1" class="position-absolute top-0 start-0 w-100 h-200 object-fit-cover" runat="server" />
                                                         </div>
+=======
+                                                    <asp:Image src="images/person.jpg" ID="Image1" class="position-absolute top-0 start-0 w-100 h-200 object-fit-cover" runat="server" />
+                                                </div>
+>>>>>>> ed419ac (update Default.html and Add_image.aspx)
 
-                                                        <div id="Num1" onclick="ChengColor_Click(Num1)" alt="Preview" class="card card-bordered col-sm-7 col-md-7 col-lg-7" style="margin-top:0px;  ">
-
-
-                                                            <div id="ButtonLeft" class=" ButtonLeft col-sm-12 col-md-12 col-lg-12 " style="margin-top:40px;margin-right:12px;">
-
-                                                                <p data-bs-toggle="dropdown" class="my-1" style="font-size: 11px; font-weight: bold;">81112990-رها-امیدوار</p>
-                                                                
+                                                <div id="Num1" onclick="ChengColor_Click(Num1)" alt="Preview" class="card card-bordered col-sm-7 col-md-7 col-lg-7 p-1 mx-1" style="margin-top:0px;  ">
 
 
-                                                                <ul id="Menu1" class="dropdown-menu " aria-labelledby="btnGroupVerticalDrop1" style="">
-                                                                    <li>
-                                                                        <input id="BtnManaginfo" class="btn btn-outline-primary dropdown-item " type="button" value="اطلاعات هویتی " onclick="Showiframe_Vabaste(Menu1)" 81112990 />
-                                                                      
+                                                    <div id="ButtonLeft" class=" ButtonLeft col-sm-12 col-md-12 col-lg-12 center mb-1  " style="margin-top:40px;margin-right:1px;">
 
-                                                                    </li>
-                                                                    <li>
-                                                                        <input id="BtnEmploystatus" class="btn btn-outline-primary dropdown-item" type="button" value="وضعیت اشتغال " onclick="Showiframe_Vabaste(Menu1)" />
-                                                                       
-
-                                                                    </li>
-                                                                    <li>
-                                                                        <input id="BtnDegree" class="btn btn-outline-primary dropdown-item" type="button" value="مدرک تحصیلی" onclick="Showiframe_Vabaste(Menu1)" />
-                                                                      
-
-                                                                    </li>
-                                                                    <li>
-                                                                        <input id="BtnJob" class="btn btn-outline-primary dropdown-item" type="button" value="شغل" onclick="Showiframe_Vabaste(Menu1)" />
-                                                                      
-
-                                                                    </li>
-                                                                    <li>
-                                                                        <input id="BtnOrganpost" class="btn btn-outline-primary dropdown-item" type="button" value="پست سازمانی" onclick="Showiframe_Vabaste(Menu1)" />
-                                                                       
-
-                                                                    </li>
-                                                                    <li>
-                                                                        <input id="BtnVabaste" class="btn btn-outline-primary dropdown-item" type="button" value="وابستگان" onclick="Showiframe_Vabaste(Menu1)" 81112990 />
-                                                                     
-                                                                    </li>
-
-                                                                </ul>
-
-                                                            </div>
-
-                                                            <div class="col-sm-12 col-md-12 col-lg-12">
-                                                                <p data-bs-toggle="dropdown " class="my-1" style="font-size: 11px; font-weight: bold;">رسمی-تهران</p>
-                                                              
-                                                            </div>
-                                                            
+                                                            <p data-bs-toggle="dropdown" class="text-center align-items-stretch fw-bold small " style="font-size: 10px;">81112990 - رها امیدوار</p>
+                                                      
+                                                            <ul id="Menu1" class="dropdown-menu " aria-labelledby="btnGroupVerticalDrop1" style="">
+                                                                <li>
+                                                                    <input id="BtnManaginfo" class="btn btn-outline-primary dropdown-item " type="button" value="اطلاعات هویتی " onclick="Showiframe_Vabaste(Menu1)" 81112990 />
 
 
+                                                                </li>
+                                                                <li>
+                                                                    <input id="BtnEmploystatus" class="btn btn-outline-primary dropdown-item" type="button" value="وضعیت اشتغال " onclick="Showiframe_Vabaste(Menu1)" />
+
+
+                                                                </li>
+                                                                <li>
+                                                                    <input id="BtnDegree" class="btn btn-outline-primary dropdown-item" type="button" value="مدرک تحصیلی" onclick="Showiframe_Vabaste(Menu1)" />
+
+
+                                                                </li>
+                                                                <li>
+                                                                    <input id="BtnJob" class="btn btn-outline-primary dropdown-item" type="button" value="شغل" onclick="Showiframe_Vabaste(Menu1)" />
+
+
+                                                                </li>
+                                                                <li>
+                                                                    <input id="BtnOrganpost" class="btn btn-outline-primary dropdown-item" type="button" value="پست سازمانی" onclick="Showiframe_Vabaste(Menu1)" />
+
+
+                                                                </li>
+                                                                <li>
+                                                                    <input id="BtnVabaste" class="btn btn-outline-primary dropdown-item" type="button" value="وابستگان" onclick="Showiframe_Vabaste(Menu1)" 81112990 />
+
+                                                                </li>
+
+                                                            </ul>
 
                                                         </div>
+
+                                                    <div class="col-sm-12 col-md-12 col-lg-12 center">
+                                                        <p data-bs-toggle="dropdown " class="my-1" style="font-size: 11px; font-weight: bold;">رسمی-تهران</p>
+
                                                     </div>
-                                                </ItemTemplate>
-                                              </div>
+
+
+
+
+                                                </div>
+                                            </div>
+
+                                        </div>
 
 
 
                                     </div>
+<<<<<<< HEAD
                                     <div class="col-sm-10 col-md-109 col-lg-10 .bg-light ">
 
                                         <iframe id="iframePersonel" src="https://gelare-dev.github.io/portfolio/images/J_galleries.jpeg" class="  vh-100 col-sm-12 col-md-12 col-lg-12" title="Iframe Example"></iframe>
 
                                     </div>
+=======
+                                    <!--<div class="col-sm-10 col-md-10 col-lg-10 .bg-light ratio ratio-4:3   ">-->
+                                        <div class="col-sm-10 col-md-10 col-lg-10 bg-light p-0" style="height: 100vh;">
+                                            <!--<iframe id="iframePersonel" src="images/J_galleries.jpeg" class="  vh-100 col-sm-12 col-md-12 col-lg-12" allowfullscreen title="Iframe Example"></iframe>-->
+                                            <iframe id="iframePersonel"
+                                                    src="photo-frame.html"
+                                                    class="w-100 h-100 border-0"
+                                                    allowfullscreen
+                                                    title="Iframe Example">
+                                            </iframe>
+                                        </div>
+>>>>>>> ed419ac (update Default.html and Add_image.aspx)
 
                                 </div>
 
@@ -179,10 +199,21 @@
 
                 <script src="https://egov.officeirib.ir/AssetsForAPP/assets/js/bootstrap-datepicker.js" type="text/javascript"></script>
                 <script src="https://egov.officeirib.ir/AssetsForAPP/assets/js/persiandate.min.js" type="text/javascript"></script>
+<<<<<<< HEAD
                
                
               
                
                
+=======
+             
+           
+
+          
+         
+            
+           
+             
+>>>>>>> ed419ac (update Default.html and Add_image.aspx)
 </body>
 </html>
