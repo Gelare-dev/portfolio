@@ -71,127 +71,48 @@
 <body class="has-rtl nk-body npc-default has-apps-sidebar has-sidebar" dir="rtl">
 
 
-    <form id="form1" runat="server">
-        <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
-        <div class=" pt-0 ">
+   <form id="form1" runat="server">
+      <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+      <div class=" pt-0 ">
 
+          <div class="row g-1 mx-3 ">
+              <div class="col-sm-2 col-md-2 col-lg-2">
 
-                            <div class="col-md-12 col-lg-12 ">
-                                <h10 class="center">پرونده های پرسنلی</h10>
+                  <div class="col-md-12 col-lg-12 ">
+                      <h10 class="center">پرونده های پرسنلی</h10>
+                      <asp:TextBox ID="Txt_PersonelId" type="number" name="Txt_PersonelId" runat="server" class="form-control " placeholder="جستجو"></asp:TextBox>
+                  </div>
+                  <div class="row g-1 align-items-stretch my-1">
+                      <!-- تصویر سمت راست -->
+                      <div id="Border1" onclick="ChengColorBorder_Click(Num1)" class="card card-bordered col-sm-3 col-md-3 col-lg-4 p-2">
+                          <asp:Image src="https://gelare-dev.github.io/portfolio/images/person.jpg" ID="Image1" class="position-absolute top-0 start-0 w-100 h-200 object-fit-cover" runat="server" />
+                      </div>
+                                <!-- اطلاعات سمت چپ -->
+                      <div id="Num1" onclick="ChengColor_Click(Num1)" alt="Preview" class="card card-bordered col-sm-7 col-md-7 col-lg-7 p-1 mx-1" style="margin-top:0px;">
+                          <div id="ButtonLeft" class="ButtonLeft col-12 text-center mb-1" style="margin-top:40px;margin-right:1px;">
+                              <p data-bs-toggle="dropdown" class="fw-bold small" style="font-size: 10px;">81112990 - رها امیدوار</p>
+                          </div>
+                          <div class="col-12 text-center">
+                              <p data-bs-toggle="dropdown" class="my-1" style="font-size: 11px; font-weight: bold;">رسمی-تهران</p>
+                          </div>
+                      </div>
+                  </div>
 
-
-                                <asp:TextBox ID="Txt_PersonelId" type="number" name="Txt_PersonelId" runat="server" class="form-control " placeholder="جستجو"></asp:TextBox>
-
-                            </div>
-
-                            <div class="col-sm-12 col-md-12 col-lg-12    ">
-                            <div class="row g-1 align-items-stretch my-1">
-
-                                <!--<div class="row my-1 ">-->
-                                    <div id="Border1" onclick="ChengColorBorder_Click(Num1)" class=" card card-bordered col-sm-3  col-md-3 col-lg-4 p-2 " >
-
-                                        <asp:Image src="images/person.jpg" ID="Image1" class="position-absolute top-0 start-0 w-100 h-200 object-fit-cover" runat="server" />
-                                    </div>
-
-                                                    <asp:Image src="images/person.jpg" ID="Image1" class="position-absolute top-0 start-0 w-100 h-200 object-fit-cover" runat="server" />
-                                                </div>
-
-                                    <div id="Num1" onclick="ChengColor_Click(Num1)" alt="Preview" class="card card-bordered col-sm-7 col-md-7 col-lg-7 p-1 mx-1" style="margin-top:0px;  ">
-
-
-                                        <div id="ButtonLeft" class=" ButtonLeft col-sm-12 col-md-12 col-lg-12 center mb-1  " style="margin-top:40px;margin-right:1px;">
-
-                                                <p data-bs-toggle="dropdown" class="text-center align-items-stretch fw-bold small " style="font-size: 10px;">81112990 - رها امیدوار</p>
-                                         
-                                            </div>
-
-                                        <div class="col-sm-12 col-md-12 col-lg-12 center">
-                                            <p data-bs-toggle="dropdown " class="my-1" style="font-size: 11px; font-weight: bold;">رسمی-تهران</p>
-
-                                        </div>
-
-                                    </div>
-
-                                    </div>
-                                  
-                                        <div class="col-sm-10 col-md-10 col-lg-10 bg-light p-0" style="height: 100vh;">
-                                           
-                                            <iframe id="iframePersonel"
-                                                    src="https://gelare-dev.github.io/portfolio/photo-frame.html"
-                                                    class="w-100 h-100 border-0"
-                                                    allowfullscreen
-                                                    title="Iframe Example">
-                                            </iframe>
-                                        </div>
-                                </div>
-
-                            </div>
-
-            <div class="row g-1 mx-3 ">
-                <div class="col-sm-2 col-md-2 col-lg-2">
-
-                    <div class="col-md-12 col-lg-12 ">
-                        <h10 class="center">پرونده های پرسنلی</h10>
-
-
-
-                        <asp:TextBox ID="Txt_PersonelId" type="number" name="Txt_PersonelId" runat="server" class="form-control " placeholder="جستجو"></asp:TextBox>
-
-                    </div>
-                    <div class="row g-1 align-items-stretch my-1">
-                        <!-- تصویر سمت راست -->
-                        <div id="Border1" onclick="ChengColorBorder_Click(Num1)" class="card card-bordered col-sm-3 col-md-3 col-lg-4 p-2">
-                            <asp:Image src="https://gelare-dev.github.io/portfolio/images/person.jpg" ID="Image1" class="position-absolute top-0 start-0 w-100 h-200 object-fit-cover" runat="server" />
-                        </div>
-
-                        <!--<div class="col-sm-10 col-md-10 col-lg-10 .bg-light ratio ratio-4:3   ">-->
-                            <div class="col-sm-10 col-md-10 col-lg-10 bg-light p-0" style="height: 100vh;">
-                                <!--<iframe id="iframePersonel" src="images/J_galleries.jpeg" class="  vh-100 col-sm-12 col-md-12 col-lg-12" allowfullscreen title="Iframe Example"></iframe>-->
-                                <iframe id="iframePersonel"
-                                   
-                                        src="photo-frame.html"
-                                        class="w-100 h-100 border-0"
-                                        allowfullscreen
-                                        title="Iframe Example">
-                                </iframe>
-
-                      
-                        <!-- اطلاعات سمت چپ -->
-                        <div id="Num1" onclick="ChengColor_Click(Num1)" alt="Preview" class="card card-bordered col-sm-7 col-md-7 col-lg-7 p-1 mx-1" style="margin-top:0px;">
-                            <div id="ButtonLeft" class="ButtonLeft col-12 text-center mb-1" style="margin-top:40px;margin-right:1px;">
-                                <p data-bs-toggle="dropdown" class="fw-bold small" style="font-size: 10px;">81112990 - رها امیدوار</p>
-
-                            </div>
-                            <div class="col-12 text-center">
-                                <p data-bs-toggle="dropdown" class="my-1" style="font-size: 11px; font-weight: bold;">رسمی-تهران</p>
-                            </div>
-                        </div>
-                    </div>
-
-                 
-                </div>
-                    <div class="col-sm-10 col-md-10 col-lg-10 bg-light p-0" style="height: 100vh;">
-
-                        <iframe id="iframePersonel"
-                                src="https://gelare-dev.github.io/portfolio/photo-frame.html"
-                                class="w-100 h-100 border-0"
-                                allowfullscreen
-                                title="Iframe Example">
-                        </iframe>
-                    </div>
-
-            </div>
-
-        </div>
-
-        </div>
-
-        <input id="Hid_selectedid" type="hidden" value="Num0" />
-        <asp:Button runat="server" data-bs-dismiss="modal" class="d-none" data-bs-toggle="modal" data-bs-target="#modalDefault" ID="Button7" Text="پیش فرض" />
-        <asp:Button runat="server" data-bs-dismiss="modal" class="d-none" data-bs-toggle="modal" data-bs-target="#modalDefaultRelate" ID="Button8" Text="پیش فرض" />
-        <asp:Button runat="server" data-bs-dismiss="modal" class="d-none" data-bs-toggle="modal" data-bs-target="#modalDefaultAddRelate" ID="Button9" Text="پیش فرض" />
-        <asp:Button runat="server" data-bs-dismiss="modal" class="d-none" data-bs-toggle="modal" data-bs-target="#modalDefaultAddAele" ID="Button10" Text="پیش فرض" />
-    </form>
+               
+              </div>
+              <div class="col-sm-10 col-md-10 col-lg-10 bg-light p-0" style="height: 100vh;">
+                      <iframe id="iframePersonel"
+                              src="https://gelare-dev.github.io/portfolio/photo-frame.html"
+                              class="w-100 h-100 border-0"
+                              allowfullscreen
+                              title="Iframe Example">
+                      </iframe>
+                  </div>
+          </div>
+      </div>
+      <input id="Hid_selectedid" type="hidden" value="Num0" />
+    
+  </form>
 
              
 
