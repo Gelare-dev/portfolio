@@ -47,7 +47,6 @@
             background: #cdced32e;
             box-shadow: 0 0 10px -4px rgba(54, 74, 99, 0.2);
         }
-        
     </style>
     <link rel="stylesheet" href="https://egov.officeirib.ir/AssetsForAPP/assets/css/dashlite.rtl.css" />
     <link rel="stylesheet" href="https://egov.officeirib.ir/AssetsForAPP/assets/css/theme.css" />
@@ -61,25 +60,22 @@
         .brd {
             border-color: coral;
         }
+
         html, body {
             height: 100%;
             margin: 0;
-            overflow: hidden; /* حذف اسکرول صفحه */
+            overflow: hidden;
+        }
     </style>
 </head>
 <body class="has-rtl nk-body npc-default has-apps-sidebar has-sidebar" dir="rtl">
 
 
-
-   
-
-                 <form id="form1" runat="server">
+    <form id="form1" runat="server">
         <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
         <div class=" pt-0 ">
-         
-                    <div class="row g-1 mx-3 ">
-                        <div class="col-sm-2 col-md-2 col-lg-2">
 
+<<<<<<< HEAD
                             <div class="col-md-12 col-lg-12 ">
                                 <h10 class="center">پرونده های پرسنلی</h10>
 
@@ -163,10 +159,24 @@
                                 </div>
 
                             </div>
+=======
+            <div class="row g-1 mx-3 ">
+                <div class="col-sm-2 col-md-2 col-lg-2">
+
+                    <div class="col-md-12 col-lg-12 ">
+                        <h10 class="center">پرونده های پرسنلی</h10>
+>>>>>>> 8426955 (update Default.html and photo-frane.html)
 
 
+                        <asp:TextBox ID="Txt_PersonelId" type="number" name="Txt_PersonelId" runat="server" class="form-control " placeholder="جستجو"></asp:TextBox>
 
+                    </div>
+                    <div class="row g-1 align-items-stretch my-1">
+                        <!-- تصویر سمت راست -->
+                        <div id="Border1" onclick="ChengColorBorder_Click(Num1)" class="card card-bordered col-sm-3 col-md-3 col-lg-4 p-2">
+                            <asp:Image src="https://gelare-dev.github.io/portfolio/images/person.jpg" ID="Image1" class="position-absolute top-0 start-0 w-100 h-200 object-fit-cover" runat="server" />
                         </div>
+<<<<<<< HEAD
                         <!--<div class="col-sm-10 col-md-10 col-lg-10 .bg-light ratio ratio-4:3   ">-->
                             <div class="col-sm-10 col-md-10 col-lg-10 bg-light p-0" style="height: 100vh;">
                                 <!--<iframe id="iframePersonel" src="images/J_galleries.jpeg" class="  vh-100 col-sm-12 col-md-12 col-lg-12" allowfullscreen title="Iframe Example"></iframe>-->
@@ -177,13 +187,45 @@
                                         allowfullscreen
                                         title="Iframe Example">
                                 </iframe>
+=======
+                      
+                        <!-- اطلاعات سمت چپ -->
+                        <div id="Num1" onclick="ChengColor_Click(Num1)" alt="Preview" class="card card-bordered col-sm-7 col-md-7 col-lg-7 p-1 mx-1" style="margin-top:0px;">
+                            <div id="ButtonLeft" class="ButtonLeft col-12 text-center mb-1" style="margin-top:40px;margin-right:1px;">
+                                <p data-bs-toggle="dropdown" class="fw-bold small" style="font-size: 10px;">81112990 - رها امیدوار</p>
+>>>>>>> 8426955 (update Default.html and photo-frane.html)
                             </div>
+                            <div class="col-12 text-center">
+                                <p data-bs-toggle="dropdown" class="my-1" style="font-size: 11px; font-weight: bold;">رسمی-تهران</p>
+                            </div>
+                        </div>
+                    </div>
 
+                 
+                </div>
+                    <div class="col-sm-10 col-md-10 col-lg-10 bg-light p-0" style="height: 100vh;">
+
+                        <iframe id="iframePersonel"
+                                src="https://gelare-dev.github.io/portfolio/photo-frame.html"
+                                class="w-100 h-100 border-0"
+                                allowfullscreen
+                                title="Iframe Example">
+                        </iframe>
                     </div>
 
 
+               
+
+            </div>
+
+
+
         </div>
-      
+
+
+
+        </div>
+
         <input id="Hid_selectedid" type="hidden" value="Num0" />
         <asp:Button runat="server" data-bs-dismiss="modal" class="d-none" data-bs-toggle="modal" data-bs-target="#modalDefault" ID="Button7" Text="پیش فرض" />
         <asp:Button runat="server" data-bs-dismiss="modal" class="d-none" data-bs-toggle="modal" data-bs-target="#modalDefaultRelate" ID="Button8" Text="پیش فرض" />
@@ -191,6 +233,7 @@
         <asp:Button runat="server" data-bs-dismiss="modal" class="d-none" data-bs-toggle="modal" data-bs-target="#modalDefaultAddAele" ID="Button10" Text="پیش فرض" />
     </form>
 
+<<<<<<< HEAD
                 <script src="https://egov.officeirib.ir/AssetsForAPP/js/jquery-3.7.1.js"></script>
                 <script src="https://egov.officeirib.ir/AssetsForAPP/assets/js/bundle.js"></script>
                 <script src="https://egov.officeirib.ir/AssetsForAPP/assets/js/scripts.js"></script>
@@ -199,5 +242,27 @@
                 <script src="https://egov.officeirib.ir/AssetsForAPP/assets/js/bootstrap-datepicker.js" type="text/javascript"></script>
                 <script src="https://egov.officeirib.ir/AssetsForAPP/assets/js/persiandate.min.js" type="text/javascript"></script>
 
+=======
+
+    <script src="https://egov.officeirib.ir/AssetsForAPP/js/jquery-3.7.1.js"></script>
+    <script src="https://egov.officeirib.ir/AssetsForAPP/assets/js/bundle.js"></script>
+    <script src="https://egov.officeirib.ir/AssetsForAPP/assets/js/scripts.js"></script>
+    <script src="https://egov.officeirib.ir/AssetsForAPP/assets/js/editors.js"></script>
+
+    <script src="https://egov.officeirib.ir/AssetsForAPP/assets/js/bootstrap-datepicker.js" type="text/javascript"></script>
+    <script src="https://egov.officeirib.ir/AssetsForAPP/assets/js/persiandate.min.js" type="text/javascript"></script>
+    <<<<<<< HEAD
+
+    =======
+
+
+
+
+
+
+
+
+    >>>>>>> 9de2fa8 (update default.html befor rebase)
+>>>>>>> 8426955 (update Default.html and photo-frane.html)
 </body>
 </html>
